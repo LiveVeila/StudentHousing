@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing page</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="listing.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div>
+            <div class="logo">
+                <a href="listing.html"><img src="Bilder/sammenlogo.svg.png" alt="sammenlogo"></a>
+            </div>
+            <nav>
+                <li>
+                    <img src="Bilder/sok.svg" alt="sok">
+                </li>
+                <li>
+                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <img src="Bilder/meny.svg" alt="meny">
+                    </a>
+                </li>
+            </nav>
+        </div>
+    </header>
+
+    <!--Hero-->
+    <div class="heroimg">
+        <img src="" alt="">
+        <div class="herotxt textspace8">
+            <h1 class="bold" style="color: #FFF;">STUDENTBOLIGER I BERGEN</h1>
+            <h2 style="color: #FFF;">Finn din studentbolig her!</h2>
+        </div>
+    </div>
+    <br><br><br><br>
+
+    <!--Filters-->
+    <div class="filter">
+        <div class="customselect">
+            <div>
+                <select id="boligtype">
+                    <option value="">Boligtype</option>
+                    <option value="apartment">Leilighet</option>
+                    <option value="room">Rom</option>
+                    <option value="studio">Studio</option>
+                </select>
+            </div>
+            <div>
+                <select id="pris">
+                    <option value="">Pris pr/mnd</option>
+                    <option value="1">>4500</option>
+                    <option value="2">4500-6500</option>
+                    <option value="3">6500-7500</option>
+                    <option value="4">7500+</option>
+                </select>
+            </div>
+            <div>
+                <select id="utleier">
+                    <option value="">Utleier</option>
+                    <option value="external">Privat</option>
+                    <option value="student_organization">Studentbolig</option>
+                </select>
+            </div>
+            <div>
+                <select id="storrelse">
+                    <option value="">Storrelse</option>
+                    <option value="1">10-15 m<sup>2</sup></option>
+                    <option value="2">16-25 m<sup>2</sup></option>
+                    <option value="3">26-35 m<sup>2</sup></option>
+                    <option value="4">36+ m<sup>2</sup></option>
+
+                </select>
+            </div>
+            <div>
+                <select id="bad">
+                    <option value="">Bad</option>
+                    <option value="true">Privat</option>
+                    <option value="false">Delt</option>
+                </select>
+            </div>
+            <div>
+                <select id="kjokken">
+                    <option value="">Kjokken</option>
+                    <option value="true">Privat</option>
+                    <option value="false">Delt</option>
+                </select>
+            </div>
+            <button class="filled" onclick="filterCards()">Filtrer</button>
+        </div>
+
+        <br><br>
+        <nav>
+            <li>
+                <img src="Bilder/blokk.svg" alt="blokk">
+            </li>
+            <li>
+                <img src="Bilder/liste.svg" alt="liste">
+            </li>
+        </nav>
+    </div>
+    <br><br>
+
+    <!--Listings - cards -->
+    <div class="listings" id="listings">
+
+       
+    </div>
+    <br><br><br><br>
+
+    <!--Change pages-->
+    <div class="sides">
+        <div class="firstnmr">1</div>
+        <div class="othernmr">2</div>
+        <div class="othernmr">3</div>
+        <div class="othernmr">4</div>
+        <img src="Bilder/chevronright2.svg" alt="chevronright">
+    </div>
+
+    <!--Footer-->
+    <br><br><br><br>
+    <footer>
+        
+        <!--Above the line-->
+        <div class="topfooter">
+            <div>
+                <h4 class="bold textspace24">Besoksadresse</h4>
+                <p class="textspace16">Fantoft servicesenter</p>
+                <p>Fantoftvegen 14, 5075 Bergen</p>
+            </div>
+            <div>
+                <h4 class="bold textspace24">Nyttig informasjon</h4>
+                <p class="textspace16">Aktuelt</p>
+                <p class="textspace16">Om oss</p>
+                <p class="textspace16">Apningstider</p>
+                <p>Ofte stilte sporsmal</p>
+            </div>
+            <div>
+                <h4 class="bold textspace24">Kontakt oss</h4>
+                <p class="textspace16">Kontakt oss</p>
+                <p class="textspace16">Presse</p>
+                <p>For bedrifter</p>
+            </div>
+            <div>
+                <h4 class="bold textspace24">Folg oss</h4>
+                <img src="Bilder/instagramlogo.svg" alt="instagram">
+                <img src="Bilder/facebooklogo.svg" alt="facebook">
+                <img src="Bilder/linkedinlogo.svg" alt="linkedin">
+                <img src="Bilder/xlogo.svg" alt="x">
+            </div>
+        </div>
+        <hr>
+
+        <!--Under the line-->
+        <div class="bottomfooter">
+            <div>
+                <div class="uib"><img src="Bilder/Uiblogo.png" alt="UiB"></div>
+                <div class="sammen"><img src="Bilder/sammenlogo.svg.png" alt="Sammen"></div>
+            </div>
+            <div>
+                <nav>
+                    <li><p class="supporting"><u>Personvernerklaering</u></p></li>
+                    <li><p class="supporting"><u>Informasjonskapsler</u></p></li>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!--Sidebar from bootstrap-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h3 class="offcanvas-title" id="offcanvasExampleLabel">Meny</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="btnpages">
+            <a href="listing.html"><h4><img src="Bilder/hjem.svg" alt="hjem">Forside</h4></a>
+            <br><br>
+            <a href="comparison.html"><h4><img src="Bilder/sammenlign.svg" alt="sammenlign">Sammenlign boliger</h4></a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="listing.js"></script>
+</body>
+</html>

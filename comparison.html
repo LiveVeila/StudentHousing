@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison page</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="comparison.css">
+    <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div>
+            <div class="logo">
+                <a href="listing.html"><img src="Bilder/sammenlogo.svg.png" alt="sammenlogo"></a>
+            </div>
+            <nav>
+                <li>
+                    <img src="Bilder/sok.svg" alt="sok">
+                </li>
+                <li>
+                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <img src="Bilder/meny.svg" alt="meny">
+                    </a>
+                </li>
+            </nav>
+        </div>
+    </header>
+
+    <div class="title">
+        <h1 class="bold">SAMMENLIGNING</h1>
+    </div>
+
+    <!--Container 1-->
+    <div class="container1">
+        <!--Housing 1 - hero -->
+        <div class="grid-hero1">
+            <div class="customdropdown">
+                <select name="boliger" id="bolig1">
+                    <option value="">Velg bolig 1</option>
+                </select>
+            </div>
+            <br><br>
+            <div id="bigimg1"></div>
+            <div class="miniimg1" id="miniimg1"></div>
+            <div class="herotxtandstars">
+                <div class="grid-herotitle">
+                    <h1 id="type1"></h1><!--Type bolig-->
+                    <h1 id="price1"></h1><!--Pris-->
+                </div>
+                <div class="grid-heroplace" id="adrplace1"></div>
+                <div class="grid-stars" id="star1"> <!--Stjerner-->
+                </div>
+            </div>
+        </div>
+
+        <!--Housing 2 - hero -->
+        <div class="grid-hero2">
+            <div class="customdropdown">
+                <select name="boliger" id="bolig2">
+                    <option value="">Velg bolig 2</option>
+                </select>
+            </div>
+            <br><br>
+            <div id="bigimg2"></div>
+            <div class="miniimg2" id="miniimg2"></div>
+            <div class="herotxtandstars">
+                <div class="grid-herotitle">
+                    <h1 id="type2"></h1><!--Type bolig-->
+                    <h1 id="price2"></h1><!--Pris-->
+                </div>
+                <div class="grid-heroplace" id="adrplace2"></div>
+                <div class="grid-stars" id="star2"> <!--Stjerner-->
+                </div>
+            </div>
+        </div>
+
+        <!--Housing 1 - Boligtype-->
+        <div class="grid-housingtype1" id="boliginfo1">
+        </div>
+
+        <!--Housing 2 - Boligtype-->
+        <div class="grid-housingtype2" id="boliginfo2">
+        </div>
+    
+    <!--End of container 1-->
+    </div>
+
+    <!--Fasiliteter-->
+    <div class="fasiliteter">
+        <h1 class="bold textspace64" id="tittelfas"></h1>
+        <div class="fasiliteterlist">
+            <!--Housing 1 - fasilities-->
+            <div id="fasility1"></div>
+            <!--Housing 2 - fasilities-->
+            <div id="fasility2"></div>
+        </div>
+    </div>
+
+    <!--Container 2-->
+    <div class="container2">
+
+        <!--Housing 1 - beliggenhet-->
+        <div class="grid-area1" id="beliggenhet1">
+        </div>
+
+        <!--Housing 2 - beliggenhet-->
+        <div class="grid-area2" id="beliggenhet2">
+        </div>
+
+        <!--Housing 1 - Naboer-->
+        <div class="grid-demo1" id="naboer1">
+        </div>
+
+        <!--Housing 2 - Naboer-->
+        <div class="grid-demo2" id="naboer2">
+        </div>
+        
+        <!--Housing 1 - Knapper-->
+        <div class="grid-btn1">
+            <button class="outline" onclick="detaljer1()">Spesifikasjoner</button>
+            <button class="filled">Sok naa!</button>
+        </div>
+
+        <!--Housing 2 - knapper-->
+        <div class="grid-btn2">
+            <button class="outline" onclick="detaljer2()">Spesifikasjoner</button>
+            <button class="filled">Sok naa!</button>
+        </div>
+    <!--End of container 2-->
+    </div>
+
+    <!--Footer-->
+    <footer>
+        
+        <!--Above the line-->
+        <div class="topfooter">
+            <div>
+                <h4 class="bold textspace24">Besoksadresse</h4>
+                <p class="textspace16">Fantoft servicesenter</p>
+                <p>Fantoftvegen 14, 5075 Bergen</p>
+            </div>
+            <div>
+                <h4 class="bold textspace24">Nyttig informasjon</h4>
+                <p class="textspace16">Aktuelt</p>
+                <p class="textspace16">Om oss</p>
+                <p class="textspace16">Apningstider</p>
+                <p>Ofte stilte sporsmal</p>
+            </div>
+            <div>
+                <h4 class="bold textspace24">Kontakt oss</h4>
+                <p class="textspace16">Kontakt oss</p>
+                <p class="textspace16">Presse</p>
+                <p>For bedrifter</p>
+            </div>
+            <div>
+                <h4 class="bold textspace24">Folg oss</h4>
+                <img src="Bilder/instagramlogo.svg" alt="instagram">
+                <img src="Bilder/facebooklogo.svg" alt="facebook">
+                <img src="Bilder/linkedinlogo.svg" alt="linkedin">
+                <img src="Bilder/xlogo.svg" alt="x">
+            </div>
+        </div>
+        <hr>
+
+        <!--Under the line-->
+        <div class="bottomfooter">
+            <div>
+                <div class="uib"><img src="Bilder/Uiblogo.png" alt="UiB"></div>
+                <div class="sammen"><img src="Bilder/sammenlogo.svg.png" alt="Sammen"></div>
+            </div>
+            <div>
+                <nav>
+                    <li><p class="supporting"><u>Personvernerklaering</u></p></li>
+                    <li><p class="supporting"><u>Informasjonskapsler</u></p></li>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!--Bootstrap sidebar-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h3 class="offcanvas-title" id="offcanvasExampleLabel">Meny</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="btnpages">
+            <a href="listing.html"><h4><img src="Bilder/hjem.svg" alt="hjem">Forside</h4></a>
+            <br><br>
+            <a href="comparison.html"><h4><img src="Bilder/sammenlign.svg" alt="sammenlign">Sammenlign boliger</h4></a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="comparison.js"></script>
+</body>

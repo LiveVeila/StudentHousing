@@ -1,0 +1,313 @@
+.title {
+    margin: 64px;
+    text-align: left;
+}
+
+.customdropdown {
+    position: relative;
+    padding: 12px;
+    border: 2px solid #FF9346;
+    border-radius: 16px;
+    background-color: #FFF;
+    justify-content: center;
+}
+
+select {
+    align-items: center;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    text-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    padding-right: 40px; /* Gi plass til ny pil */
+    background: url('Bilder/chevron.svg') no-repeat right center;
+    background-size: 30px 30px;
+    width: 100%;
+}
+
+.container1 {
+    display: grid;
+    grid-template-areas: 
+        "hero1 hero2"
+        "housingtype1 housingtype2"
+    ;
+    grid-template-columns: 47.5% 47.5%;
+    grid-template-rows: auto auto;
+    gap: 92px 64px;
+    margin: 0px 64px;
+}
+
+.grid-hero1 {
+    grid-area: hero1;
+}
+
+.grid-hero2 {
+    grid-area: hero2;
+}
+
+.grid-hero1 img, .grid-hero2 img{
+    border: 1px solid #FFF;
+}
+
+.bigimg1 {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.bigimg2 {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.miniimg1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 16px;
+}
+
+.miniimg2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 16px;
+}
+
+.miniimg1 img {
+    width: 25%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.miniimg2 img {
+    width: 25%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.herotxtandstars {
+    display: grid;
+    grid-template-areas: "herotitle" "heroplace" "stars";
+    padding: 0px 32px 0px 8px;
+}
+
+.herotxt {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.grid-herotitle {
+    grid-area: herotitle;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.grid-heroplace {
+    grid-area: heroplace;
+    margin-bottom: 16px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.grid-heroplace img {
+    width: 20px;
+    height: 20px;
+    padding-right: 8px;
+    float: left;
+}
+
+.grid-stars {
+    grid-area: stars;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.grid-stars img {
+    width: 30px;
+    height: 30px;
+}
+
+.grid-housingtype1 {
+    grid-area: housingtype1;
+}
+
+.grid-housingtype2 {
+    grid-area: housingtype2;
+}
+
+.grid-housingtype1, .grid-housingtype2 {
+    display: grid;
+    grid-row: auto auto auto auto auto auto;
+    gap: 24px;
+    padding: 16px 32px 16px 32px;
+    align-items: center;
+    margin-bottom: 92px;
+}
+
+.grid-housingtype1 img, .grid-housingtype2 img {
+    width: 24px;
+    height: 24px;
+    float: left;
+    padding-right: 8px;
+}
+
+.fasiliteter {
+    background-color: #357DBD;
+    padding: 64px;
+    text-align: center;
+    margin-bottom: 92px;
+}
+
+.fasiliteter h1 {
+    color: #FFF;
+}
+
+.fasiliteterlist {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 64px;
+}
+
+.fasiliteterlist > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.fasilitetericon {
+    width: 160px;
+    height: 96.61px;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+}
+
+.fasilitetericon p {
+    color: #FFF;
+}
+
+.fasilitetericon img {
+    height: 50px;
+    width: auto;
+}
+
+.container2 {
+    display: grid;
+    grid-template-areas: 
+        "area1 area2"
+        "demo1 demo2"
+        "btn1 btn2"
+    ;
+    grid-template-columns: 47.5% 47.5%;
+    grid-template-rows: auto auto auto;
+    gap: 64px;
+    margin: 0px 64px 92px 64px;
+}
+
+.grid-area1 {
+    grid-area: area1;
+    text-align: left;
+    margin: 0px 32px 0px 32px;
+}
+
+.grid-area2 {
+    grid-area: area2;
+    text-align: left;
+    margin: 0px 32px 0px 32px;
+}
+
+.grid-area1 img, .grid-area2 img {
+    border-radius: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+    height: auto;
+}
+
+.grid-area1 h2, .grid-area2 h2 {
+    margin-bottom: 24px;
+}
+
+.grid-demo1 {
+    grid-area: demo1;
+    padding: 0px 32px;
+}
+
+.grid-demo2 {
+    grid-area: demo2;
+    padding: 0px 32px;
+}
+
+.data {
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    height: auto;
+    margin-bottom: 24px;
+    gap: 8px;
+}
+
+.data img {
+    width: 20px;
+    height: auto;
+}
+
+.datatxt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 552px;
+}
+
+.grid-btn1 {
+    grid-area: btn1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.grid-btn2 {
+    grid-area: btn2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.infonaboer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 8px;
+    background-color: rgba(53, 125, 189, 0.3);
+    border:2px solid #357DBD ;
+    border-radius: 8px;
+}
+
+.infonaboer img{
+    width: 100px;
+    height: auto;
+    margin-right: 12px;
+}
+
+.nabotxt p{
+    margin-bottom: 8px;
+}

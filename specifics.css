@@ -1,0 +1,332 @@
+.top {
+    margin-bottom: 92px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.hero > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.carouselimg {
+    height: 600px;
+    object-fit: cover;
+}
+
+.txtandbtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+.txtandbtn nav {
+    display: flex;
+}
+
+.txtandbtn nav li {
+    float: left;
+    gap: 16px;
+    list-style-type: none;
+}
+
+.herotxt img {
+    float: left;
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+}
+
+.infoblocks {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    padding: 0px 64px 0px 64px;
+    margin-bottom: 92px;
+}
+
+.infoblocks > div {
+    text-align: left;
+    width: 28.5vw;
+    height: 450px;
+    border-radius: 12px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 32px 16px 32px 16px;
+}
+
+.infotxt {
+    align-items: left;
+}
+
+.infotxt > div {
+    justify-content: left;
+}
+
+.infotxt img {
+    float: left;
+    padding-right: 8px;
+    width: 30px;
+    height: 30px;
+}
+
+.alderfordeling {
+    gap: 16px;
+}
+
+.alderfordeling > div {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 16px;
+    width: 360px;
+}
+
+.alderfordeling img {
+    width: auto;
+    height: 50px;
+    float: left;
+    padding-right: 16px;
+}
+
+.fakultetfordeling {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.fakultet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 16px;
+}
+
+.fakultet > div {
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.fakultet img {
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin-top: 8px;
+    padding-right: 4px;
+}
+
+.fasilities {
+    height: auto;
+    background-color: #357DBD;
+    text-align: center;
+    padding: 64px;
+    justify-content: center;
+    box-sizing: content-box;
+    margin-bottom: 92px;
+}
+
+.fasilities h1 {
+    color: #FFF;
+}
+
+.fasilitylist {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 92px 64px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.fasilityicon {
+    width: 187px;
+    height: 139px;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+}
+
+.fasilityicon img {
+    height: 75px;
+    width: auto;
+}
+
+.fasilityicon h4 {
+    color: #FFF;
+}
+
+
+.commonrooms {
+    text-align: center;
+    margin-bottom: 92px;
+}
+
+.commonroomsimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 64px;
+    margin-right: 64px;
+    gap: 32px;
+}
+
+.commonroomsimg img {
+    width: 28.5vw;
+    height: 500px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.area {
+    text-align: center;
+    margin-bottom: 92px;
+}
+
+.areainfo {
+    text-align: left;
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+.areainfo iframe {
+    float: right;
+    padding: 0px 64px;
+    width: 70vh;
+    height: 450px;
+    border-radius: 12px;
+}
+
+.reviewsblue {
+    background-color: #357DBD;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px;
+    margin-bottom: 92px;
+}
+
+.reviewsblue h1 {
+    color: #FFF;
+}
+
+.reviews {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.reviews > div {
+    padding: 32px 16px 40px 16px;
+    border-radius: 8px;
+    background-color: #FFF;
+    max-width: 24.88vw;
+}
+
+.reviewstxt {
+    gap: 16px;
+    text-align: left;
+}
+
+.topreviews {
+    gap: 8px;
+    align-items: left;
+}
+
+.starreviews {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.starreviews img {
+    width: 24px;
+    height: 24px;
+}
+
+.btnsdown {
+    padding: 0px 64px 0px 64px;
+    margin-bottom: 92px;
+}
+
+.btnsdown nav {
+    display: flex;
+    float: right;
+    margin-right: 64px;
+}
+
+.btnsdown nav li {
+    gap: 16px;
+    list-style-type: none;
+}
+
+/*Highcharts css*/
+#container {
+    max-width: 400px;
+    margin: 0 auto;
+    max-height: 300px;
+}
+
+.highcharts-figure,
+.highcharts-data-table table {
+    min-width: 380px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tbody tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+.highcharts-description {
+    margin: 0.3rem 10px;
+}

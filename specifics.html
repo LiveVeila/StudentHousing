@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="specifics.css">
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <script src="specifics.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <div>
+            <div class="logo">
+                <a href="listing.html"><img src="Bilder/sammenlogo.svg.png" alt="sammenlogo"></a>
+            </div>
+            <nav>
+                <li>
+                    <img src="Bilder/sok.svg" alt="sok">
+                </li>
+                <li>
+                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <img src="Bilder/meny.svg" alt="meny">
+                    </a>
+                </li>
+            </nav>
+        </div>
+    </header>
+
+    <!--Hero-->
+    <!--Carousel from bootstrap-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="" id="img1" class="d-block w-100 carouselimg" alt="img1">
+          </div>
+          <div class="carousel-item">
+            <img src="" id="img2" class="d-block w-100 carouselimg" alt="img2">
+          </div>
+          <div class="carousel-item">
+            <img src="" id="img3" class="d-block w-100 carouselimg" alt="img3">
+          </div>
+          <div class="carousel-item">
+            <img src="" id="imgfloor" class="d-block w-100 carouselimg" alt="imgfloor">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br><br>
+    <div class="txtandbtn">
+        <div class="herotxt">
+            <h1 class="textspace16" id="title"></h1>
+            <div>
+                <img src="Bilder/placepin.svg" alt="place">
+                <p id="address"></p>
+            </div>
+        </div>
+        <!--Knapper, men de vil ikke ha rikitg margin-->
+        <nav>
+            <li><button class="outline" onclick="compare()">Sammenlign</button></a></li>
+            <li><button class="filled">Sok na!</button></li>
+        </nav>
+    </div>
+
+    <!--Housingtype, demographics, scores-->
+    <br><br><br><br>
+    <div class="infoblocks">
+        <div class="infotxt">
+            <h2 class="bold textspace24">Boligtype</h2>
+            <div id="boliginfo">
+                <p class="textspace24"><img src="Bilder/areal.svg" alt="areal"></p>
+                <p class="textspace24"><img src="Bilder/bathroom.svg" alt="bad"></p>
+                <p class="textspace24"><img src="Bilder/kitchen.svg" alt="kjoken"></p>
+                <p class="textspace24"><img src="Bilder/sofasvart.svg" alt="info"></p>
+                <p><img src="Bilder/price.svg" alt="pris"></p>
+            </div>
+        </div>
+        <div>
+            <h2 class="bold textspace24">Naboer</h2>
+            <div id="naboer" class="alderfordeling"></div>
+        </div>
+        <div>
+            <h2 class="bold textspace24">Scores</h2>
+            <!--Highcharts-->
+            <figure class="highcharts-figure">
+                <div id="container"></div>
+            </figure>
+        </div>
+    </div>
+
+    <!--Fasilities-->
+    <br><br><br><br>
+    <div class="fasilities">
+        <h1 class="bold textspace40">FASILITETER</h1>
+        <div class="fasilitylist" id="fasilitetsliste"></div>
+    </div>
+
+    <!--Flere bilder-->
+    <br><br><br><br>
+    <div class="commonrooms">
+        <h1 class="bold textspace40">FLERE BILDER</h1>
+        <div class="commonroomsimg" id="flerebilder">
+        </div>
+    </div>
+
+    <!--Placement-->
+    <br><br><br><br>
+    <div class="area">
+        <h1 class="bold textspace40">BELIGGENHET</h1>
+        <div class="areainfo">
+            <h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.1450437310855!2d5.330048856722229!3d60.386349921265776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfc04e96f5a39%3A0xda17ce282c8e9338!2sMedieklyngen%20AS!5e0!3m2!1sno!2sno!4v1744445625970!5m2!1sno!2sno" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                Domus studentium in regione tranquilla sitae sunt, circiter quinque milia passuum ab urbe principali. 
+                Prope stationem traminis levissimi locatae sunt, quo iter ad centrum minus quam viginti minutis perficitur.
+                <br><br>
+                Haud longe invenies gymnasium commune, ubi sodales studentes exerceri solent pretio modico.
+                <br><br>
+                Tabernae cibariae et cauponae in proxima vicinia sunt, facile aditu pedibus.
+                Non longe distat forum maius cum multis tabernis diversis.
+                <br><br>
+                Plura loca naturalia amoena in propinquo sunt, ut silvae quietae et lacus serenus ad ambulandum apti.            </img>
+            </h4>
+        </div>
+    </div>
+
+    <!--Reviews-->
+    <br><br><br><br>
+    <div class="reviewsblue">
+        <h1 class="bold textspace40">ANDMELDELSER</h1>
+        <div class="reviews" id="andmeld"></div>
+    </div>
+    
+    <!--Buttons-->
+    <br><br><br><br>
+    <div class="btnsdown">
+        <nav>
+            <li><button class="outline" onclick="compare()">Sammenlign</button></li>
+            <li><button class="filled">Sok na!</button></li>
+        </nav>
+    </div>
+
+    <!--Footer-->
+    <br><br><br><br>
+    <footer>
+        
+        <!--Above the line-->
+        <div class="topfooter">
+            <div>
+                <h4 class="bold textspace24">Besoksadresse</h4>
+                <p class="textspace16">Fantoft servicesenter</p>
+                <p>Fantoftvegen 14, 5075 Bergen</p>
+            </div>
+            <div>
+                <h4 class="bold textspace24">Nyttig informasjon</h4>
+                <p class="textspace16">Aktuelt</p>
+                <p class="textspace16">Om oss</p>
+                <p class="textspace16">Apningstider</p>
+                <p>Ofte stilte sporsmal</p>
+            </div>
+            <div>
+                <h4 class="bold textspace24">Kontakt oss</h4>
+                <p class="textspace16">Kontakt oss</p>
+                <p class="textspace16">Presse</p>
+                <p>For bedrifter</p>
+            </div>
+            <div>
+                <h4 class="bold textspace24">Folg oss</h4>
+                <img src="Bilder/instagramlogo.svg" alt="instagram">
+                <img src="Bilder/facebooklogo.svg" alt="facebook">
+                <img src="Bilder/linkedinlogo.svg" alt="linkedin">
+                <img src="Bilder/xlogo.svg" alt="x">
+            </div>
+        </div>
+        <hr>
+
+        <!--Under the line-->
+        <div class="bottomfooter">
+            <div>
+                <div class="uib"><img src="Bilder/Uiblogo.png" alt="UiB"></div>
+                <div class="sammen"><img src="Bilder/sammenlogo.svg.png" alt="Sammen"></div>
+            </div>
+            <div>
+                <nav>
+                    <li><p class="supporting"><u>Personvernerklaering</u></p></li>
+                    <li><p class="supporting"><u>Informasjonskapsler</u></p></li>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!--Sidebar from bootstrap-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h3 class="offcanvas-title" id="offcanvasExampleLabel">Meny</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="btnpages">
+            <a href="listing.html"><h4><img src="Bilder/hjem.svg" alt="hjem">Forside</h4></a>
+            <br><br>
+            <a href="comparison.html"><h4><img src="Bilder/sammenlign.svg" alt="sammenlign">Sammenlign boliger</h4></a>
+          </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

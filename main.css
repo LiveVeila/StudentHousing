@@ -1,0 +1,212 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, p, .label {
+    margin: 0px;
+    font-weight: 200;
+}
+
+h1 {
+    color: #000;
+    font-size: 40px;
+}
+
+h2 {
+    color: #000;
+    font-size: 36px;
+}
+
+h3 {
+    color: #000;
+    font-size: 32px;
+}
+
+h4 {
+    color: #000;
+    font-size: 24px;
+}
+
+p {
+    color: #000;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.supporting {
+    color: #000;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    font-weight: 100;
+}
+
+.label {
+    color: #000;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+button {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: none;
+}
+
+.filled {
+    background-color: #FF9346;
+    color: #FFF;
+}
+
+.filled:hover {
+    opacity: 0.8;
+}
+
+.outline {
+    border: 2px solid #FF9346;
+    color: #FF9346;
+    background-color: #FFF;
+}
+
+.outline:hover {
+    background-color: rgba(255, 147, 70, 0.20);
+}
+
+header, .topfooter, .bottomfooter {
+    background-color: #FDF4EE;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+header > div {
+    display: flex;
+    padding: 32px 64px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.logo img {
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+}
+
+.logo a {
+    text-decoration: none;
+    background: none;
+}
+
+nav {
+    display: flex;
+    margin-right: 64px;
+}
+
+nav li {
+    float: left;
+    margin-left: 16px;
+    list-style-type: none;
+}
+
+nav li img {
+    width: 50px;
+    height: 50px;
+}
+
+footer hr {
+    border: 2px solid #FFF;
+}
+
+.topfooter {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.topfooter > div {
+    margin: 64px;
+}
+
+.topfooter img {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.textspace24 {
+    margin-bottom: 24px;
+}
+
+.textspace16 {
+    margin-bottom: 16px;
+}
+
+.textspace8 {
+    margin-bottom: 8px;
+}
+
+.textspace40 {
+    margin-bottom: 40px;
+}
+
+.textspace64 {
+    margin-bottom: 64px;
+}
+
+.bottomfooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.bottomfooter > div {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 32px 64px 32px 64px;
+}
+
+.uib img {
+    width: 70px;
+    height: auto;
+    margin-right: 16px;
+}
+
+.sammen img {
+    width: 137px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btnpages img{
+    float: left;
+    margin-right: 8px;
+    width: 50px;
+    height: auto;
+    align-items: center;
+}
+
+.btnpages {
+    align-items: center;
+    justify-content: left;
+}
+
